@@ -1,0 +1,16 @@
+[colors]
+
+# special
+foreground      = #c0b18b
+foreground_bold = #c0b18b
+cursor          = #c0b18b
+#background      = #1f1f1f
+background = rgba(31 ,31, 31, 0.85)
+
+[options]
+font = Hack 9
+browser = chromium
+clickable_url = true
+dynamic_title = true
+search_wrap = true
+  
