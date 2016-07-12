@@ -26,3 +26,5 @@ runtime! archlinux.vim
 let python_highlight_all = 1
 :set rtp+=/usr/lib/python3.5/site-packages/powerline/bindings/vim/
 :set laststatus=2
+"Key Mappings
+:map <F6> :tabn <CR>     
