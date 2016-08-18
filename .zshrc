@@ -12,6 +12,8 @@ promptinit
 
 prompt adam1 'red' 'white'
 
+export PPROJECTS='/home/daryl/Development/PythonProjects'
+
 alias vi='vim'
 alias work='sudo vpnc xcd'
 alias disc='sudo vpnc-disconnect'
