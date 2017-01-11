@@ -2,8 +2,8 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
- set rtp+=~/.vim/bundle/Vundle.vim
- call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " " alternatively, pass a path where Vundle should install plugins
 " "call vundle#begin('~/some/path/here')
 "
@@ -14,7 +14,8 @@ filetype off                  " required
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
 Plugin 'valloric/youcompleteme'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
 Plugin 'git://github.com/nvie/vim-flake8.git'
 " " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
@@ -27,10 +28,8 @@ Plugin 'git://github.com/nvie/vim-flake8.git'
 "
 " " All of your Plugins must be added before the following line
 
-call flake8#Flake8UnplaceMarkers()
- call vundle#end()            " required
- filetype plugin indent on    " required
-
+call vundle#end()            " required
+filetype plugin indent on    " required
 " " To ignore plugin indent changes, instead use:
 " "filetype plugin on
 " "
@@ -61,7 +60,8 @@ runtime! archlinux.vim
 " and configure vim to your own liking!
 :syntax on
 :set t_Co=256
-:color torte
+:set background=dark
+:color desert
 :set number
 :set ts=4
 :set autoindent
@@ -74,3 +74,4 @@ let python_highlight_all = 1
 "Key Mappings
 :map <F6> :tabn <CR>     
 :map <F5> :tabp <CR>     
+:map <C-n> :NERDTreeToggle<CR>
