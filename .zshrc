@@ -88,7 +88,8 @@ screenfetch -t -A 'TUX'
 #Git branch name
 
 #prompt adam1 'red' 'white'
-export PPROJECTS='/home/daryl/Development/PythonProjects'
+export PPROJECTS='/home/daryl/development/PythonProjects'
+export ANDROID_HOME='/opt/android-sdk'
 
 alias vi='vim'
 alias work='sudo vpnc xcd'
@@ -105,6 +106,8 @@ alias ls='ls --color=auto'
 alias ll='ls -lA'
 alias rm='rm --preserve-root'
 alias xclip='xclip -selection c'
+alias ssh='TERM=xterm ssh'
+
 #SSHGuard Commands
 alias sshglist='sudo iptables -L sshguard --line-numbers'
 alias sshgunblock='sudo iptables -D sshguard' 
