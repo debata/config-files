@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 bar {
      	font pango:Hack, FontAwesome 9 
 	position top
-	status_command i3status 
+	status_command py3status 
         tray_output primary
 }
 bindsym $mod+Shift+w reload
