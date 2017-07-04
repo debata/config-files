@@ -118,6 +118,7 @@ alias monitoroff='xrandr --output DisplayPort-0 --off'
 
 #Network
 alias wifioff='sudo ip link set wlp4s0 down'
+alias wifion='sudo netctl start wlp4s0-SheWantsTheDLink'
 alias vpncan='sudo openvpn --config /etc/openvpn/CA\ Montreal.ovpn'
 alias vpnus='sudo openvpn --config /etc/openvpn/US\ New York City.ovpn'
 
