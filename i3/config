@@ -191,6 +191,7 @@ bindsym $mod+Shift+m exec "i3lock -t -i /home/daryl/Images/arch_lock.png -c 2222
 bindsym $mod+Shift+z exec "i3lock -t -i /home/daryl/Images/arch_lock.png -c 222222; systemctl suspend"
 bindsym $mod+b exec "chromium"
 bindsym $mod+o exec "thunar"
+bindsym $mod+p exec "passmenu2"
 for_window [class="Terminator"] floating disable
 
 for_window [class="ROX-Filer"] floating enable
