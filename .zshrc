@@ -3,13 +3,13 @@ export LC_CTYPE=en_CA.utf8
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/daryl/.oh-my-zsh
+export ZSH=/home/daryl/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
-
+ZSH_THEME="bullet-train"
+eval "$(dircolors /etc/.dir_colors)"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -31,7 +31,6 @@ ZSH_THEME="agnoster"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
-
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
@@ -118,8 +117,9 @@ alias monitoroff='xrandr --output DisplayPort-0 --off'
 
 #Network
 alias wifioff='sudo ip link set wlp4s0 down'
-alias wifion='sudo netctl start wlp4s0-SheWantsTheDLink'
+alias wifion='sudo netctl start wlp4s0-SilenceOfTheLANs'
 alias vpncan='sudo openvpn --config /etc/openvpn/CA\ Montreal.ovpn'
 alias vpnus='sudo openvpn --config /etc/openvpn/US\ New York City.ovpn'
 
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
