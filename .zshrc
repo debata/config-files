@@ -83,7 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-screenfetch -t -A 'TUX'
 #Git branch name
 
 #prompt adam1 'red' 'white'

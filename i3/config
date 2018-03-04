@@ -197,3 +197,4 @@ bindsym $mod+Shift+f [class="[.]*"] floating toggle
 bindsym $mod+Shift+o exec i3-msg move workspace to output up
 bindsym $mod+Shift+p exec i3-msg move workspace to output down
 
+bindcode 107 exec "deepin-screenshot"
