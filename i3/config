@@ -29,8 +29,8 @@ set $mod Mod1
   set $base0A #ffefcc
   set $base0B #a5ffe1
   set $base0C #97e0ff
-  set $base0D #97bbf7
-  set $base0E #c0b7f9
+  set $base0D #9f78e1
+  set $base0E #ffb52a
   set $base0F #fcc09e
 
 focus_follows_mouse no
@@ -42,11 +42,11 @@ font pango:DejaVu 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-hide_edge_borders both
+hide_edge_borders none
 #                         border  background text    indicator
-client.focused          red $base01    $base07 $base0F
+client.focused          $base0E $base0E    $base07 $base0F
 client.focused_inactive $base02 $base02    $base03 $base0F
-client.unfocused        $base02 $base02    $base03 $base0F
+client.unfocused        $base02 $base0D    $base07 $base0F
 client.urgent           $base02 $base08    $base00 $base0F
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1

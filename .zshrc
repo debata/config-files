@@ -97,7 +97,7 @@ alias uninstall='sudo pacman -Rs'
 alias upgrade='sudo pacman -Syu'
 alias packages="expac -H M '%m\t%n' | sort -h | less"
 
-alias orphans="sudo pacman -Rs $(pacman -Qtdq)"
+alias orphans='sudo pacman -Rs $(pacman -Qtdq)'
 #Utilities
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
