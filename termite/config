@@ -32,7 +32,8 @@ color15 = #fdf6e3
 background = rgba(31,31,31,1)
 
 [options]
-font = UbuntuMono 11
+font = UbuntuMono Nerd Font 11
+#font = UbuntuMono Nerd Font 11
 browser = chromium
 clickable_url = true
 dynamic_title = true

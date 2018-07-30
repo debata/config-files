@@ -8,7 +8,6 @@ export ZSH=/home/daryl/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
 eval "$(dircolors /etc/.dir_colors)"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -122,3 +121,16 @@ alias vpnus='sudo openvpn --config /etc/openvpn/US\ New York City.ovpn'
 
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
+POWERLEVEL9K_MODE='nerdfont-complete'
+source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs  time)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='red'
+POWERLEVEL9K_DIR_HOME_BACKGROUND='red'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='red'
+
+export LANG="en_CA.UTF-8"
+export LC_ALL="en_CA.UTF-8"
+export LC_MESSAGES="C"
