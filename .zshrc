@@ -104,9 +104,7 @@ alias ll='ls -lA'
 alias rm='rm --preserve-root'
 alias xclip='xclip -selection c'
 alias ssh='TERM=xterm ssh'
-
-#SSHGuard Commands
-alias sshglist='sudo iptables -L sshguard --line-numbers'
+#SSHGuard Commands alias sshglist='sudo iptables -L sshguard --line-numbers'
 alias sshgunblock='sudo iptables -D sshguard' 
 
 #Monitor
@@ -116,6 +114,8 @@ alias monitoroff='xrandr --output DisplayPort-0 --off'
 #Network
 alias wifioff='sudo ip link set wlp4s0 down'
 alias wifion='sudo netctl start wlp4s0-SilenceOfTheLANs'
+alias wiredon='sudo systemctl start dhcpcd@enp3s0f0.service'
+alias wiredoff='sudo bash ~/wiredoff.sh' 
 alias vpncan='sudo openvpn --config /etc/openvpn/CA\ Montreal.ovpn'
 alias vpnus='sudo openvpn --config /etc/openvpn/US\ New York City.ovpn'
 
@@ -134,3 +134,5 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='red'
 export LANG="en_CA.UTF-8"
 export LC_ALL="en_CA.UTF-8"
 export LC_MESSAGES="C"
+
+eval $(ssh-agent) > /dev/null
