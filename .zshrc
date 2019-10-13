@@ -104,6 +104,7 @@ alias ll='ls -lA'
 alias rm='rm --preserve-root'
 alias xclip='xclip -selection c'
 alias ssh='TERM=xterm ssh'
+alias myip='curl icanhazip.com'
 #SSHGuard Commands alias sshglist='sudo iptables -L sshguard --line-numbers'
 alias sshgunblock='sudo iptables -D sshguard' 
 

@@ -66,8 +66,10 @@ runtime! archlinux.vim
 :set ts=4
 :set autoindent
 :set shiftwidth=4
+:set tabstop=4
 :set cursorline
 :set showmatch
+:set expandtab
 let python_highlight_all = 1
 :set rtp+=/usr/lib/python3.5/site-packages/powerline/bindings/vim/
 :set laststatus=2
